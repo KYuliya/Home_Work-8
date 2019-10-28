@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background: rgb(202, 201, 201);
+
+}
+
+
+div {
+    /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin)*/
+    box-sizing: border-box;
+}
+/*
+header{
+    background-color: rgb(230, 236, 138);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}*/
+
+/*FORM*/
+main {
+    width: 90%;
+    margin: 1% 5%;
+    /*padding: 10px;*/
+    text-align: center;
+}
+.heading{
+    border: dashed rgb(134, 120, 120);
+}
+form {
+    background: rgb(202, 201, 201);
+    width: 50%;
+    margin: 0 25%;
+    margin-top:2% ;
+    /*padding: 10px;*/
+    border-radius: 5px;
+    /*Выравнивание по ширине, что означает одновременное выравнивание по левому и правому краю/
+    text-align: justify;*/
+    text-align: center;
+}
+.inform{
+    display: flex;
+}
+
+input {
+    height: 30px;;
+    width: 90%;
+    margin: 10px 5%;
+    /*закругление углов*/
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+textarea{
+    margin: 10px 5%;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    /*если щёлкнуть мышью и потянуть за уголок, то можно изменить размеры поля. 
+    Чтобы запретить эту возможность, следует */
+    resize: none;
+}
+
+button{
+    color: white;
+    height: 35px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(0, 187, 194);
+    border: none;
+}
+
+
+/*FOOTER*/
+ footer div{
+     padding: 20px;
+ }
+footer{
+    margin-top: 4% ;
+    padding: 0;
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 3fr 1.5fr repeat(2, 0.5fr) 2fr;
+     /* grid-template-columns: 2fr repeat(4, 1fr) 2.5fr;*/
+
+
+}
+ footer .part-1{
+    margin-left: 10% ;
+ }
+footer .part-2 {
+    padding:34px ;
+}
+footer .part-5 {
+    padding-top:34px ;
+    margin-left: 50%;;
+}
+ul{
+    list-style-type: none;
+}
+
+ a{ margin: 0;
+    text-decoration: none;/*Ссылки без подчеркивания*/
+    color: white;
+ }
